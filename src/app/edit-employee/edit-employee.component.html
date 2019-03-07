@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel">
+          <div class="panel-heading">
+            <h3 class="panel-title">Employee Details</h3>
+          </div>
+          <div class="panel-body">
+            <form role="form" (ngSubmit)="onSubmit(signUpForm.value)" #addEmpForm="ngForm">
+              <div class="row">
+                    <div class="col-md-3">
+                        Name
+                      </div>
+                  <div class="col-md-3">
+                    <input type="text" name="name" id="name" ngModel><br>
+                  </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-3">
+                    DOB
+                  </div>
+                        <div class="col-md-3">
+                      <input type="date" name="dob" id="dob" ngModel><br>
+                  </div>
+                </div>
+              <div class="row">
+                <div class="col-md-3">
+                  Salary
+                </div>
+                  <div class="col-md-3">
+                    <input type="number" name="salary" id="salary"  ngModel><br>
+                </div>
+              </div>
+              <div class="row">
+                  <div class="col-md-3"><br> 
+                  <input type="submit" value="Update" class="btn btn-info btn-block">
+                  </div>
+                </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
